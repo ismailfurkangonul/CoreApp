@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FwnjHWf45UkxqIy6/0BaxdKVIW8Wpydvmm7yXBY/AvCff+zLwiNRagFN7HW6+PLAKJaJkDjYtIGBy7Di9BTNDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\CoreApp\\CoreApp\\CoreApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ARIBILGI\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
