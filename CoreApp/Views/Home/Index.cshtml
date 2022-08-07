@@ -1,0 +1,47 @@
+﻿@using CoreApp.Models
+@model List<Customer>
+
+<html>
+    <head>
+
+        <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css"rel="stylesheet" />
+        <link href="/node_modules/font-awesome/css/font-awesome.css"rel="stylesheet" />
+        
+      
+    </head>
+    <body>
+        <div class="container">
+            <a class="row">
+                 <a class="btn btn-warning float-end"href="/Home/Create">Yeni Ekle</a>
+            </div>
+
+        </div>
+<table class="table table-striped">
+    <thead>
+        
+        <tr>
+           
+            <th>Adı</th>
+            <th>Soyadı</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            @{
+                foreach(Customer item in @Model)
+                {
+                    <tr>
+                    <td>@item.Name</td>
+                    <td>@item.SurName</td>    
+                    <td><a href="#"<i class="fa fa-trash"><i/></a></td>
+                    </tr>
+                }
+             }
+    </tbody>
+</table>
+   
+     
+
+    </body>
+
+</html>
