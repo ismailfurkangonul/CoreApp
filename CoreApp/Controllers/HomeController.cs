@@ -1,6 +1,7 @@
 ﻿using CoreApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CoreApp.Controllers
 {
@@ -24,11 +25,18 @@ namespace CoreApp.Controllers
 
             customer.Name = firstName;
             customer.SurName=lastName;
+            customer.Id = CustomerContext.customers.Last().Id + 1;
 
             CustomerContext.customers.Add(customer);
 
             return RedirectToAction("Index");
 
+        }
+        [HttpGet]
+        public IActionResult DeleteCustomer(int Id)
+        {
+            CustomerContext.customers.Remove(CustomerContext.customers.Find(x => x.Id == Id));
+            return RedirectToAction("Index");   
         }
      
     }

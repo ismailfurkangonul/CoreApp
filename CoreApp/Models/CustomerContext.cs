@@ -6,8 +6,8 @@ namespace CoreApp.Models
     {
         public static List<Customer> customers = new()
         {
-            new Customer{Name="Dries",SurName="Mertens"},
-
+            new Customer{Id=0,Name="Dries",SurName="Mertens"},
+            new Customer{Id=1,Name="Furkan",SurName="Gonul"},
 
 
         };
